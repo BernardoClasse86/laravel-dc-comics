@@ -1,1 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
+
+td>a {
+    text-decoration: none !important;
+    color: white !important;
+}
