@@ -15,6 +15,7 @@
               <th scope="col">Series</th>
               <th scope="col">Release Date</th>
               <th scope="col">Comic Type</th>
+              <th scope="col">Comic Link</th>
             </tr>
           </thead>
 
@@ -23,13 +24,14 @@
             @foreach ($comics as $comic)
 
                 <tr class="text-center">
-                    <td><a href="{{route('comics.show', $comic->id)}}">{{ $comic->title }}</a></td>
-                    <td class="col-3"><a href="{{route('comics.show', $comic->id)}}">{{ $comic->description }}</a></td>
-                    <td><a href="{{route('comics.show', $comic->id)}}"><img style="width: 70px" src="{{ $comic->thumb }}" alt=""></a></td>
-                    <td><a href="{{route('comics.show', $comic->id)}}">{{ $comic->price }} &euro;</a></td>
-                    <td><a href="{{route('comics.show', $comic->id)}}">{{ $comic->series }}</a></td>
-                    <td><a href="{{route('comics.show', $comic->id)}}">{{ $comic->sale_date }}</a></td>
-                    <td><a href="{{route('comics.show', $comic->id)}}">{{ $comic->type }}</a></td>
+                    <td>{{ $comic->title }}</td>
+                    <td class="col-3">{{ $comic->description }}</td>
+                    <td><img style="width: 70px" src="{{ $comic->thumb }}" alt=""></td>
+                    <td>{{ $comic->price }} &euro;</td>
+                    <td>{{ $comic->series }}</td>
+                    <td>{{ $comic->sale_date }}</td>
+                    <td>{{ $comic->type }}</td>
+                    <td><a href="{{route('comics.show', $comic->id)}}">Comic Link</a></td>
                 </tr>
 
             @endforeach

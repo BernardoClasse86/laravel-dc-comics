@@ -3,7 +3,9 @@
 @section('content')
 
     <main class="container">
-        HOMEPAGE
+        <div>contenuto homepage</div>
+
+        <a href="{{route('comics.index')}}">VAI AI FUMETTI</a>
     </main>
     
 @endsection
