@@ -6,7 +6,7 @@
     
             <div class="container-fluid">
     
-                <a class="navbar-brand" href="{{ route('home') }}">Home</a>
+                <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt=""></a>
     
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     
